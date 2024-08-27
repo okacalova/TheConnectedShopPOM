@@ -1,4 +1,4 @@
-import { test} from "node:test"
+import {test} from "@playwright/test";
 import { HomePage } from "../pages/homepage";
 
 test.describe ('HomePage',() => {
@@ -12,6 +12,8 @@ await homePage.checkUrl();
 await homePage.checkTitle();
 })
 test ('Logo is displayed',async()=> {
-await homePage.toBeVisible()
+   
+await homePage.checkLogoVisibility();
 
-)}
+})
+})
