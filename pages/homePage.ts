@@ -25,4 +25,4 @@ async checkUrl(){
 async checkLogoVisibility(){
     await expect (this.primaryLogo).toBeVisible();
     await expect (this.transporentLogo).not.toBeVisible();
-}
+}};
