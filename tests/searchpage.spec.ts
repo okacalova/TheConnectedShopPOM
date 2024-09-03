@@ -16,4 +16,3 @@ test.describe ('CheckSearch Functional',() => {
     await searchPage.checkSearchLinkText();
     })
 });
-    

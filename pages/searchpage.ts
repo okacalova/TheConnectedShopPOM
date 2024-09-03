@@ -17,9 +17,12 @@ export class SearchPage {
         };
         async checkSearchLinkText(expectText:string=('Search')){
             const actualText = await this.searchLink.innerText();
-            const actualText2 = await this.searchLink.getAttribute('href');
             await expect(actualText).toBe(expectText);
     
+        }
+        async checkAttributeSearchLink(expectAttribute:string=('Get attribute')){
+            const actualAttribute= await this.searchLink.getAttribute('href');
+            await expect(actualAttribute).toBe(expectAttribute);
         }
     };
 
