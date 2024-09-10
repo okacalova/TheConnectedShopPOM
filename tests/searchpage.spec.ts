@@ -11,9 +11,9 @@ test.describe ('CheckSearch Functional',() => {
     await homePage.navigate();
 
  });
- test( 'SearchLink',async () => {
-    await searchPage.checkSearchLink();
-    await searchPage.checkSearchLinkText();
+ test( 'SearchAtrributeLink',async () => {
+    await searchPage.checkAttributeSearchLink('/search');
+    await searchPage.checkSearchLinkText('SEARCH');
     })
+
 });
-    
